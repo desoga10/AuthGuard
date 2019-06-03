@@ -9,5 +9,5 @@ import { AuthserveService } from '../app/authserve.service';
 export class AppComponent {
   title = 'guard';
 
-  constructor(private _authservice: AuthserveService) {}
+  constructor(public _authservice: AuthserveService) {}
 }

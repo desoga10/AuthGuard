@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  constructor(private _auth: AuthserveService, private _router: Router) {}
+  constructor(public _auth: AuthserveService, public _router: Router) {}
 
   registerUserData = {};
   ngOnInit() {}
