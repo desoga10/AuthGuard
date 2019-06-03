@@ -1,0 +1,17 @@
+<div class="row pl-5 ml-5">
+  <div
+    class="card m-5 border-success col-lg-4 center"
+    *ngFor="let seminar of seminars"
+  >
+    <div class="card-header bg-transparent border-success">
+      {{ seminar.name }}
+    </div>
+    <div class="card-body text-success">
+      <p class="card-text">{{ seminar.description }}</p>
+      <a href="#" class="btn btn-primary">Book Ticket</a>
+    </div>
+    <div class="card-footer bg-transparent border-success">
+      {{ seminar.date | date: 'shortDate' }}
+    </div>
+  </div>
+</div>

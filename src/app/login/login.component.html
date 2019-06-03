@@ -1,0 +1,41 @@
+<div class="container-fluid top bg-light py-3">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <div class="card card-body">
+        <div class="card-header mb-3">
+          <h3 class="text-center mb-4">Login</h3>
+        </div>
+        <form>
+          <fieldset>
+            <div class="form-group has-error">
+              <input
+                class="form-control input-lg"
+                name="email"
+                type="text"
+                [(ngModel)]="loginUserData.email"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div class="form-group has-success">
+              <input
+                class="form-control input-lg"
+                placeholder="Enter Password"
+                name="password"
+                value=""
+                [(ngModel)]="loginUserData.password"
+                type="password"
+              />
+            </div>
+            <button
+              (click)="loginUsers()"
+              class="btn btn-lg btn-success btn-block"
+              type="submit"
+            >
+              Login
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

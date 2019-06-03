@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthserveService } from '../app/authserve.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'guard';
+
+  constructor(private _authservice: AuthserveService) {}
 }
